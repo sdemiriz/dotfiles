@@ -1,3 +1,3 @@
-M = {'shaunsingh/nord.nvim'}
-
-return M
+return {
+  'shaunsingh/nord.nvim'
+}
