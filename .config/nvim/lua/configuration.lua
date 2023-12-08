@@ -1,19 +1,18 @@
-
 -- Setup for Comment.nvim
 require('Comment').setup()
 
 -- Setup for bufferline.nvim
 local bufferline = require("bufferline")
 bufferline.setup({
-    options = {
-        mode = "buffers",
-        themable = true,
-        style_preset = bufferline.style_preset.minimal,
-        indicator = {
-            style = 'underline'
-        },
-        color_icons = true,
-    }
+  options = {
+    mode = "buffers",
+    themable = true,
+    style_preset = bufferline.style_preset.minimal,
+    indicator = {
+      style = 'underline'
+    },
+    color_icons = true,
+  }
 })
 
 -- Setup Nord theme
@@ -25,20 +24,20 @@ require('mason-lspconfig').setup()
 
 local servers = {
 
-  pylsp = {},
-  julials = {},
-  marksman = {},
+  -- pylsp = {},
+  -- julials = {},
+  -- marksman = {},
   -- nil_ls = {}, -- requires cargo to install
-  bashls = {}, -- requires npm to install
-  yamlls = {}, -- requires npm to install
+  -- bashls = {}, -- requires npm to install
+  -- yamlls = {}, -- requires npm to install
   -- r_language_server = {}, -- fails for unknown reason
 
-  lua_ls = {
-    Lua = {
-      workspace = { checkThirdParty = false },
-      telemetry = { enable = false },
-    },
-  },
+  -- lua_ls = {
+  --   Lua = {
+  --     workspace = { checkThirdParty = false },
+  --     telemetry = { enable = false },
+  --   },
+  -- },
 }
 
 -- Setup neovim lua configuration
@@ -155,7 +154,7 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     -- Specify installed languages
-    ensure_installed = {'python', 'r', 'bash', 'julia', 'snakemake', 'nix', 'yaml', 'lua'},
+    ensure_installed = { 'python', 'r', 'bash', 'julia', 'snakemake', 'yaml', 'lua' },
     auto_install = true,
 
     highlight = { enable = true },
@@ -284,16 +283,16 @@ require('which-key').register {
 }
 
 require("conform").setup({
-    formatters_by_ft = {
-        html = { "prettier" },
-        css = { "prettier" },
-        tex = { "latexindent" },
-    },
-    format_on_save = {
-        timeout_ms = 500,
-        async = false,
-        lsp_fallback = true,
-    },
+  formatters_by_ft = {
+    html = { "prettier" },
+    css = { "prettier" },
+    tex = { "latexindent" },
+  },
+  format_on_save = {
+    timeout_ms = 500,
+    async = false,
+    lsp_fallback = true,
+  },
 })
 
 require("gitsigns").setup({
@@ -321,13 +320,13 @@ require("gitsigns").setup({
       if vim.wo.diff then return ']c' end
       vim.schedule(function() gs.next_hunk() end)
       return '<Ignore>'
-    end, {expr=true})
+    end, { expr = true })
 
     map('n', '[c', function()
       if vim.wo.diff then return '[c' end
       vim.schedule(function() gs.prev_hunk() end)
       return '<Ignore>'
-    end, {expr=true})
+    end, { expr = true })
 
     -- Actions
     map('n', '<leader>ga', gs.stage_hunk)
@@ -355,12 +354,12 @@ local function nvim_tree_on_attach(bufnr)
   local api = require "nvim-tree.api"
 
   local function opts(desc)
-    return { 
-      desc = "nvim-tree: " .. desc, 
-      buffer = bufnr, 
-      noremap = true, 
-      silent = true, 
-      nowait = true 
+    return {
+      desc = "nvim-tree: " .. desc,
+      buffer = bufnr,
+      noremap = true,
+      silent = true,
+      nowait = true
     }
   end
 
@@ -373,7 +372,7 @@ local function nvim_tree_on_attach(bufnr)
 end
 
 require('nvim-tree').setup({
-  sort_by='case_sensitive',
+  sort_by = 'case_sensitive',
   view = {
     width = 30,
   },
