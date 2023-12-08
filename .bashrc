@@ -23,7 +23,7 @@ shopt -s cdspell
 set -C
 
 # Aliases
-alias ll='ls -lAh'
+alias ll='ls -lAh --color=auto'
 alias e='nvim'
 alias sudo='sudo '
 alias ..='cd ..'
