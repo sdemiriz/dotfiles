@@ -23,21 +23,18 @@ require('mason').setup()
 require('mason-lspconfig').setup()
 
 local servers = {
-
-  -- pylsp = {},
-  -- julials = {},
-  -- marksman = {},
-  -- nil_ls = {}, -- requires cargo to install
-  -- bashls = {}, -- requires npm to install
-  -- yamlls = {}, -- requires npm to install
+  pylsp = {},
+  julials = {},
+  marksman = {},
+  bashls = {}, -- requires npm to install
+  yamlls = {}, -- requires npm to install
   -- r_language_server = {}, -- fails for unknown reason
-
-  -- lua_ls = {
-  --   Lua = {
-  --     workspace = { checkThirdParty = false },
-  --     telemetry = { enable = false },
-  --   },
-  -- },
+  lua_ls = {
+    Lua = {
+      workspace = { checkThirdParty = false },
+      telemetry = { enable = false },
+    },
+  },
 }
 
 -- Setup neovim lua configuration
