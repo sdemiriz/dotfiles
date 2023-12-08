@@ -1,0 +1,109 @@
+// Nord color palette
+* {
+	// Darks
+	nord0:	#2e3440;
+	nord1:	#3b4252;
+	nord2:	#434c5e;
+	nord3:	#4c566a;
+
+	// Lights
+	nord4:	#d8dee9;
+	nord5:	#e5e9f0;
+	nord6:	#eceff4;
+
+	// Blues
+	nord7:	#8fbcbb;
+	nord8:	#88c0d0;
+	nord9:	#81a1c1;
+	nord10:	#5e81ac;
+
+	// Colors
+	nord11:	#bf616a;
+	nord12:	#d08770;
+	nord13:	#ebcb8b;
+	nord14:	#a3be8c;
+	nord15:	#b48ead;
+}
+
+// Standardize used values
+* {
+	BG:		@nord0;
+	BG-ALT:		@nord15;
+
+	TXT:		@nord4;
+	TXT-ALT:	@nord0;
+	TRNSPRNT:	#00000000;
+
+	BRDR:		1px;
+}
+
+// Find how all boxes are laid out here:
+// https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown
+window {
+	background-color:	@TRNSPRNT;
+	text-color:		@TXT;
+	font:			"CaskaydiaCove Nerd Font 12";
+	width:			600px;
+}
+
+mainbox {
+	background-color:	@TRNSPRNT;
+	text-color:		inherit;
+	font:			inherit;
+}
+
+inputbar {
+	background-color:	@BG;
+	text-color:		inherit;
+	font:			inherit;
+	children:		[prompt, entry];
+
+	padding:		13px 10px;
+	border: 		@BRDR;
+	border-color: 		@BG-ALT;
+}
+
+prompt {
+	background-color:	inherit;
+	text-color:		inherit;
+	font:			inherit;
+	enabled:		false;
+}
+
+entry {
+	background-color: 	inherit;
+	text-color: 		@BG-ALT;
+	font: 			inherit;
+	placeholder: 		"";
+}
+
+listview {
+	background-color:	@BG;
+	text-color:		inherit;
+	font:			inherit;
+	scrollbar:		false;
+	require-input:		true;
+
+	border:			@BRDR;
+	border-color:		@BG-ALT;
+}
+
+element {
+	background-color: 	inherit;
+	text-color: 		inherit;
+	font: 			inherit;
+	children: 		[element-text];
+
+	padding: 		2px 10px;
+}
+
+element-text {
+	background-color:	inherit;
+	text-color:		inherit;
+	highlight:		none;
+}
+
+element selected normal {
+	background-color: 	@BG-ALT;
+	text-color: 		@TXT-ALT;
+}

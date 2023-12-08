@@ -1,0 +1,27 @@
+// vim:ts=4:sw=4:et
+{
+    "layout": "splith",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "name": "Alacritty",
+            "swallows": [
+               {
+               "class": "^Alacritty$",
+               "instance": "^Alacritty$"
+               }
+            ]
+        },
+
+        {
+            "name": "Alacritty",
+            "swallows": [
+               {
+               "class": "^Alacritty$",
+               "instance": "^Alacritty$"
+               }
+            ]
+        }
+    ]
+}
