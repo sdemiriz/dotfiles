@@ -35,6 +35,8 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+  html = {},
+  cssls = {},
 }
 
 -- Setup neovim lua configuration
@@ -281,7 +283,7 @@ require('which-key').register {
 
 require("conform").setup({
   formatters_by_ft = {
-    html = { "prettier" },
+    -- html = { "prettier" },
     css = { "prettier" },
     tex = { "latexindent" },
   },
