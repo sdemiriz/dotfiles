@@ -286,6 +286,7 @@ require("conform").setup({
     -- html = { "prettier" },
     css = { "prettier" },
     tex = { "latexindent" },
+    python = { "black" },
   },
   format_on_save = {
     timeout_ms = 500,
