@@ -58,6 +58,8 @@ alias ddf='dots diff'
 
 # Micromamba
 alias conda='micromamba'
+alias act='conda activate'
+alias deact='conda deactivate'
 
 # Define prompt colors
 nord1="2E3440"
