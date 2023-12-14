@@ -30,6 +30,7 @@ networkmanager
 npm
 nvidia
 pamixer
+perl-anyevent-i3
 picom
 pipewire
 pipewire-jack
