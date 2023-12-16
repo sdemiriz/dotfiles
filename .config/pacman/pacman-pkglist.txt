@@ -23,7 +23,7 @@ linux-firmware
 linux-headers
 maim
 make
-micromamba-bin
+miniconda3
 mousepad
 neovim
 networkmanager

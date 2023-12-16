@@ -57,7 +57,6 @@ alias dpl='dots pull'
 alias ddf='dots diff'
 
 # Micromamba
-alias conda='micromamba'
 alias act='conda activate'
 alias deact='conda deactivate'
 
@@ -180,3 +179,4 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
