@@ -1,0 +1,7 @@
+[user]
+	email = sedatdemiriz97@gmail.com
+	name = sedatDemiriz
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = yes
