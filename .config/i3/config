@@ -172,13 +172,13 @@ mode "resize" {
 focus_follows_mouse no
 
 # Set gaps between and outside the windows
-set $gap_width 8
-gaps inner $gap_width
-gaps outer $gap_width
+set $gap_width 2
+gaps inner 0
+gaps outer 0
 
 
 ### Window decorations ###
-set $border_thickness 4
+set $border_thickness 2
 
 # Disable titlebars
 # https://gist.github.com/lirenlin/9892845?permalink_comment_id=4312849#gistcomment-4312849
