@@ -60,6 +60,9 @@ alias ddf='dots diff'
 alias act='conda activate'
 alias deact='conda deactivate'
 
+# Nextflow
+alias nr='nextflow run -resume'
+
 # Define prompt colors
 nord1="2E3440"
 nord2="3B4252"
