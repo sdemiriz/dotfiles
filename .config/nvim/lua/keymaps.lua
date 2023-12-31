@@ -37,6 +37,10 @@ map('n', 'N', 'Nzzz')
 map('n', '<leader>nt', ':NvimTreeToggle<CR>')
 map('n', '<leader>nf', ':NvimTreeFocus<CR>')
 
+-- LaTeX compilation keybinds
+map('n', '<leader>lc', ':!pdflatex %<CR><CR>')
+map('n', '<leader>bc', ':!pdflatex %<CR> <bar> :!bibtex %<CR> <bar> :!pdflatex %<CR>')
+
 -- map({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 -- Remap for dealing with word wrap
