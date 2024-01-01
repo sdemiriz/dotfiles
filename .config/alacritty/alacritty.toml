@@ -13,5 +13,5 @@ family = "JetBrainsMono Nerd Font"
 [font.normal]
 family = "JetBrainsMono Nerd Font"
 
-[font.selection]
-save_to_clipboard = true
+# [font.selection]
+# save_to_clipboard = true
