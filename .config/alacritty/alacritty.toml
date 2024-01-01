@@ -1,0 +1,17 @@
+import = ["/home/sdemiriz/.config/alacritty/themes/themes/nord.toml"]
+live_config_reload = true
+
+[font]
+size = 10
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[font.selection]
+save_to_clipboard = true
