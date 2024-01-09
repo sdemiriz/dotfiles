@@ -3,7 +3,7 @@ configuration {
 	font: "CaskaydiaCove Nerd Font 12";
 	location: 2;
 	xoffset: 0;
-	yoffset: 10;
+	yoffset: 400;
 	fixed-num-lines: false;
 	show-icons: true;
 	terminal: "alacritty";
