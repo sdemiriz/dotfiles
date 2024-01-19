@@ -6,6 +6,7 @@ awesome
 base
 base-devel
 bc
+biber
 efibootmgr
 feh
 firefox
@@ -13,9 +14,11 @@ gcc
 git
 grub
 gtk4
+htop
 i3-wm
 inter-font
 julia
+libxcrypt-compat
 lightdm
 lightdm-gtk-greeter
 linux
@@ -43,6 +46,13 @@ pulseaudio-equalizer
 pulseaudio-equalizer-ladspa
 rofi
 sudo
+texlive-basic
+texlive-bibtexextra
+texlive-fontsextra
+texlive-fontsrecommended
+texlive-latex
+texlive-latexextra
+texlive-latexrecommended
 ttf-cascadia-code-nerd
 ttf-cascadia-mono-nerd
 ttf-jetbrains-mono-nerd
@@ -101,3 +111,5 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+zathura
+zathura-pdf-mupdf
