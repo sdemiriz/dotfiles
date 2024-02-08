@@ -44,7 +44,9 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-equalizer
 pulseaudio-equalizer-ladspa
+redshift
 rofi
+ruby
 sudo
 texlive-basic
 texlive-bibtexextra

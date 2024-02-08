@@ -57,7 +57,7 @@ exec_always --no-startup-id polybar-msg cmd quit; polybar $barname
 exec_always --no-startup-id picom
 
 # Start gammastep
-exec --no-startup-id gammastep
+exec --no-startup-id redshift
 
 
 ### Binds ###
